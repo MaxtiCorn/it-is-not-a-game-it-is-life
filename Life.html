@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Это не игра, это жизнь</title>
+    <link rel="stylesheet" type="text/css" href="LifeStyle.css" />
+    <meta charset='utf-8' />
+</head>
+
+<body>
+    <center>
+        <p id="title">Это не игра, это жизнь</p>
+        <div id="fieldDiv">
+            <canvas height='400' width='1000' id='field'></canvas>
+        </div>
+    </center>
+    <script src="Life.js" type="text/javascript"></script>
+    <script src="Figures.js" type="text/javascript"></script>
+    <div id="control">
+        <div>
+            <select id="cursor" style="height:23px;font-family:monospace;font-size:13px;">
+                <option>Точка</option>
+                <option>Стенка</option>
+                <option>Снежинка</option>
+                <option>Пинг Понг</option>
+                <option>Ган</option>
+            </select>
+
+            <a href="#" onclick="startOrStop()" id="startStop" class="button">ЗАПУСТИТЬ</a>
+            <a href="#" onclick="clearField()" class="button">ОЧИСТИТЬ</a>
+            <a href="#" onclick="save()" class="button">СОХРАНИТЬ</a>
+            <a href="#" onclick="load()" class="button">ЗАГРУЗИТЬ</a>
+        </div>
+        <div>
+            <input class="scale" id="width" placeholder="width"></input>
+            <input class="scale" id="height" placeholder="height"></input>
+            <a href="#" onclick="toScale()" class="button">МАСШТАБИРОВАТЬ</a>
+        </div>
+        <div style="margin-top:10px;font-size:14px;font-family:monospace;">
+            СКОРОСТЬ:
+            <input type="range" onchange="changeSpeed()" id="speed" min="50" max="150" value="100"></input>
+        </div>
+    </div>
+</body>
+
+</html>

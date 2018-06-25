@@ -1,0 +1,87 @@
+body {
+    background: #f5f5f5;
+}
+
+#title {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: monospace;
+}
+
+#fieldDiv {
+	padding: 5px;
+	display: inline-block;
+}
+
+#field {
+	display: inline-block;
+    border: 1px solid black;
+}
+
+#control {
+	display: inline-block;
+	padding: 5px;
+	height: 50%;
+	position: center;
+    width: 34%;
+	margin-left: 33%;
+	margin-right: 33%;
+	padding: 10px;
+    border: 1px lightgray solid;
+	background: white;
+}
+
+.button {
+	background: #1f3438;
+	text-align: center;
+	padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+	display: inline-block;
+	font-size: 13px;
+	font-family: monospace;
+	color: ghostwhite;
+	text-decoration: none;
+	outline: none;
+}
+
+.scale {
+	width: 100px;
+	display: inline-block;
+	margin-top: 10px;
+	padding: 2px;
+}
+
+
+input[type=range]{
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #1f3438;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
